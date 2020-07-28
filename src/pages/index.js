@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <div>
       <h1>Harman's Thoughts</h1>
-      <h4>{data.allMarkdownRemark.totalCount}</h4>
+      <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <BlogLink to={node.fields.slug}>
